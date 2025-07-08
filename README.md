@@ -2,6 +2,9 @@
 
 ![C](https://img.shields.io/badge/language-C-blue)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Last Update](https://img.shields.io/badge/last%20update-July--2025-blue)
+
 
 A simple Address Book system written in C that performs contact management using a CSV file (`contact.csv`) for storage.
 
