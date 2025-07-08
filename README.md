@@ -43,7 +43,7 @@ gcc main.c contact.c file.c validate.c edit.c delete.c search.c sort.c populate.
 ```
 ![Demo](demo.png)
 
-## 🧪 Sample `sample_contact.csv`
+## 🧪 Sample `contact.csv`
 
 ```csv
 Name,Phone,Email,Address
@@ -51,4 +51,4 @@ John Doe,1234567890,john@example.com,New York
 Jane Smith,9876543210,jane@demo.com,California
 ```
 
-📥 [Download sample CSV](sample_contact.csv)
+📥 [Download sample CSV](contact.csv)
