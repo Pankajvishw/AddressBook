@@ -52,3 +52,10 @@ Jane Smith,9876543210,jane@demo.com,California
 ```
 
 📥 [Download sample CSV](contact.csv)
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+```
