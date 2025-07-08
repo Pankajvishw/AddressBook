@@ -43,7 +43,8 @@ gcc main.c contact.c file.c validate.c edit.c delete.c search.c sort.c populate.
 ```
 ![Demo](demo.png)
 
-## 🧪 Sample `contact.csv`
+📥 [Download sample CSV](sample_contact.csv)
+## 🧪 Sample `sample_contact.csv`
 
 ```csv
 Name,Phone,Email,Address
