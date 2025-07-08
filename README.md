@@ -39,3 +39,11 @@ Using GCC:
 
 ```bash
 gcc main.c contact.c file.c validate.c edit.c delete.c search.c sort.c populate.c -o addressbook
+./addressbook
+
+## 🧪 Sample `contact.csv`
+
+```csv
+Name,Phone,Email,Address
+John Doe,1234567890,john@example.com,New York
+Jane Smith,9876543210,jane@demo.com,California
