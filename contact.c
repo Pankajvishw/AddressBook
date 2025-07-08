@@ -71,8 +71,7 @@ void createContact(AddressBook *addressBook)
 {
         if(addressBook->contactCount == MAX_CONTACTS)
         {
-                printf("❌ Sorry! Address Book is Full, Please Delete some contacts to add more.\n");
-                return;
+                printf("❌ Sorry! Address Book is Full, Please Delete some contacts to add more.\n"); return;
         }	
 
         // Read the name from user
@@ -80,40 +79,40 @@ void createContact(AddressBook *addressBook)
         scanf(" %[^\n]", addressBook->contacts[addressBook->contactCount].name);
 
         char phone[20], email[50];
-        int invalid = 0;
+        int valid = 0;
 
         // Read the Phone Number from the user and validate
         printf("📱 Enter the Phone Number : ");
         do
         {
         scanf(" %[^\n]", phone);
-        invalid = (!valid_phone(addressBook, phone));
+        valid = (valid_phone(addressBook, phone));
         if(duplicate_phone(addressBook, phone))
         {
                 printf("\n❗ERROR! Number ALready exists.\nPlease Enter Unique Number : ");
-                invalid = 1;
+                valid = 0;
         }
-        } while(invalid);
+        } while(!valid);
         strcpy(addressBook->contacts[addressBook->contactCount].phone, phone);
 
+        valid = 0;  // Reset before email loop
         // Read the mail id from user and validate
         printf("📧 Enter the Email ID : ");
         do
         {
         scanf(" %[^\n]", email);
-        invalid = (!valid_email(addressBook, email));
+        valid = (valid_email(addressBook, email));
         if(duplicate_email(addressBook, email))
         {
                 printf("\n❗ERROR! Email ALready exists.\nPlease Enter Unique mail ID : ");
-                invalid = 1;
+                valid = 0;
         }
-        } while(invalid);
+        } while(!valid);
         strcpy(addressBook->contacts[addressBook->contactCount].email, email);
 
         // Read the address from user
         printf("🏠 Enter the Address : ");
         scanf(" %[^\n]", addressBook->contacts[addressBook->contactCount].address);
-
 
         // Increment count when saved Successfully
         addressBook->contactCount++;
