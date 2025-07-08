@@ -41,6 +41,7 @@ Using GCC:
 gcc main.c contact.c file.c validate.c edit.c delete.c search.c sort.c populate.c -o addressbook
 ./addressbook
 ```
+![Demo](demo.png)
 
 ## 🧪 Sample `contact.csv`
 
